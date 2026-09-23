@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Lumid Studio — Pitch Deck</title>
-<meta name="description" content="Lumid Studio designs and builds websites that bring in enquiries. Web design & development from Kozhikode, Kerala.">
-<meta property="og:title" content="Lumid Studio — Pitch Deck">
-<meta property="og:description" content="Websites built to bring in enquiries. Web design & development, Kozhikode, Kerala.">
-<meta property="og:image" content="https://riyan.lumid.in/pitch-deck/img/page-01.jpg">
+<title>Riyan Safeekh — Web Design Pitch Deck</title>
+<meta name="description" content="Web design &amp; development by Riyan Safeekh, Kozhikode, Kerala. 16 slides on process, selected work, and pricing.">
+<meta property="og:title" content="Riyan Safeekh — Web Design Pitch Deck">
+<meta property="og:description" content="Web design &amp; development, Kozhikode, Kerala.">
+<meta property="og:image" content="https://riyan.lumid.in/design-pitchdeck/img/slide-01.jpg">
 <meta property="og:url" content="https://riyan.lumid.in/design-pitchdeck/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -18,49 +18,96 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap">
 <style>
   :root {
-    --ground: #F4F3F8; --paper: #FFFFFF; --ink: #0B1412; --ink-soft: #4A5654; --ink-faint: #8B9794;
-    --line: #E2E1EA; --teal: #073A3E; --teal-lift: #0F494F; --cream: #FDF8C6;
+    --ground: #F4F3F8;
+    --paper: #FFFFFF;
+    --ink: #0B1412;
+    --ink-soft: #4A5654;
+    --ink-faint: #8B9794;
+    --line: #E2E1EA;
+    --teal: #073A3E;
+    --cream: #FDF8C6;
     --shadow: 0 1px 2px rgba(7,58,62,.06), 0 18px 40px -24px rgba(7,58,62,.35);
     --grotesk: "Schibsted Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --wrap: 1060px;
-    color-scheme: light;
+    --wrap: 1020px;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      color-scheme: dark; --ground: #0A100F; --ink: #EDF2F0; --ink-soft: #A3B0AC; --ink-faint: #6E7C79;
-      --line: #1C2725; --shadow: 0 1px 2px rgba(0,0,0,.5), 0 22px 46px -26px rgba(0,0,0,.8);
+      color-scheme: dark;
+      --ground: #0A100F;
+      --ink: #EDF2F0;
+      --ink-soft: #A3B0AC;
+      --ink-faint: #6E7C79;
+      --line: #1C2725;
+      --shadow: 0 1px 2px rgba(0,0,0,.5), 0 22px 46px -26px rgba(0,0,0,.8);
     }
   }
   :root[data-theme="dark"] {
-    color-scheme: dark; --ground: #0A100F; --ink: #EDF2F0; --ink-soft: #A3B0AC; --ink-faint: #6E7C79;
-    --line: #1C2725; --shadow: 0 1px 2px rgba(0,0,0,.5), 0 22px 46px -26px rgba(0,0,0,.8);
+    color-scheme: dark;
+    --ground: #0A100F;
+    --ink: #EDF2F0;
+    --ink-soft: #A3B0AC;
+    --ink-faint: #6E7C79;
+    --line: #1C2725;
+    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 22px 46px -26px rgba(0,0,0,.8);
+  }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--grotesk);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
   }
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--ground); color: var(--ink); font-family: var(--grotesk);
-    font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased;
-  }
   img { max-width: 100%; display: block; }
   a { color: inherit; }
   :focus-visible { outline: 2px solid var(--cream); outline-offset: 3px; border-radius: 4px; }
+
   .wrap { width: 100%; max-width: var(--wrap); margin-inline: auto; padding-inline: 20px; }
   .serif { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 1.06em; }
 
-  .mast { background: var(--teal); color: #fff; padding-block: clamp(38px, 7vw, 76px) clamp(34px, 6vw, 62px); border-bottom: 1px solid rgba(253,248,198,.14); }
-  .lockup { display: flex; align-items: baseline; gap: 7px; font-size: 19px; font-weight: 600; letter-spacing: -.02em; margin-bottom: clamp(26px, 5vw, 44px); text-decoration: none; }
+  .mast {
+    background: var(--teal); color: #fff;
+    padding-block: clamp(38px, 7vw, 76px) clamp(34px, 6vw, 62px);
+    border-bottom: 1px solid rgba(253,248,198,.14);
+  }
+  .lockup {
+    display: flex; align-items: baseline; gap: 7px;
+    font-size: 19px; font-weight: 600; letter-spacing: -.02em;
+    margin-bottom: clamp(26px, 5vw, 44px);
+  }
   .lockup .st { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: 18px; color: rgba(255,255,255,.62); }
   .lockup .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--cream); margin-right: 3px; align-self: center; }
   .eyebrow { font-size: 11.5px; letter-spacing: .13em; text-transform: uppercase; color: var(--cream); margin: 0 0 14px; }
-  h1 { margin: 0; font-weight: 600; letter-spacing: -.035em; font-size: clamp(2.3rem, 7.4vw, 4.1rem); line-height: 1.02; text-wrap: balance; }
+  h1 {
+    margin: 0; font-weight: 600; letter-spacing: -.035em;
+    font-size: clamp(2.3rem, 7.4vw, 4rem); line-height: 1.02; text-wrap: balance;
+  }
   h1 .serif { color: var(--cream); letter-spacing: -.01em; }
-  .lead { margin: clamp(18px, 3vw, 24px) 0 0; max-width: 54ch; font-size: clamp(1rem, 2.1vw, 1.14rem); color: rgba(255,255,255,.78); }
-  .toc { margin: clamp(20px, 3vw, 26px) 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; letter-spacing: .04em; color: rgba(255,255,255,.62); }
+  .lead {
+    margin: clamp(18px, 3vw, 24px) 0 0; max-width: 54ch;
+    font-size: clamp(1rem, 2.1vw, 1.14rem); color: rgba(255,255,255,.78);
+  }
+  .toc {
+    margin: clamp(20px, 3vw, 26px) 0 0; padding: 0; list-style: none;
+    display: flex; flex-wrap: wrap; gap: 6px 14px;
+    font-size: 12px; letter-spacing: .04em; color: rgba(255,255,255,.62);
+  }
   .toc li { display: flex; align-items: center; gap: 14px; }
   .toc li::after { content: ""; width: 3px; height: 3px; border-radius: 50%; background: rgba(253,248,198,.55); }
   .toc li:last-child::after { display: none; }
+
   .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(26px, 4vw, 34px); }
-  .btn { display: inline-flex; align-items: center; gap: 9px; padding: 13px 20px; border-radius: 999px; font-size: 15px; font-weight: 600; letter-spacing: -.01em; text-decoration: none; border: 1px solid transparent; transition: transform .18s ease, background-color .18s ease; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 13px 20px; border-radius: 999px;
+    font-size: 15px; font-weight: 600; letter-spacing: -.01em;
+    text-decoration: none; border: 1px solid transparent;
+    transition: transform .18s ease, background-color .18s ease;
+  }
   .btn-primary { background: var(--cream); color: var(--teal); }
   .btn-ghost { border-color: rgba(255,255,255,.28); color: #fff; background: transparent; }
   .btn:hover { transform: translateY(-1px); }
@@ -68,7 +115,14 @@
   .btn svg { width: 17px; height: 17px; flex: none; }
   .meta { margin: 18px 0 0; font-size: 12.5px; color: rgba(255,255,255,.5); font-variant-numeric: tabular-nums; }
 
-  .bar { position: fixed; left: 0; right: 0; top: 0; z-index: 20; background: rgba(7,58,62,.96); padding: 10px 0; padding-top: calc(10px + env(safe-area-inset-top, 0px)); border-bottom: 1px solid rgba(253,248,198,.15); transform: translateY(-101%); transition: transform .28s ease; }
+  .bar {
+    position: fixed; left: 0; right: 0; top: 0; z-index: 20;
+    background: rgba(7,58,62,.96);
+    padding: 10px 0;
+    padding-top: calc(10px + env(safe-area-inset-top, 0px));
+    border-bottom: 1px solid rgba(253,248,198,.15);
+    transform: translateY(-101%); transition: transform .28s ease;
+  }
   .bar.on { transform: translateY(0); }
   .bar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
   .bar .name { color: #fff; font-weight: 600; font-size: 15px; letter-spacing: -.02em; }
@@ -76,14 +130,26 @@
   .bar .btn { padding: 9px 16px; font-size: 13.5px; }
 
   .deck { padding-block: clamp(30px, 5vw, 54px) clamp(40px, 6vw, 70px); }
-  .spread { margin: 0 0 clamp(22px, 4vw, 40px); }
-  .folio { display: flex; align-items: center; gap: 12px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 9px; font-variant-numeric: tabular-nums; }
+  .slide { margin: 0 0 clamp(20px, 3.4vw, 34px); }
+  .folio {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--ink-faint); margin-bottom: 9px; font-variant-numeric: tabular-nums;
+  }
+  .folio .nm { color: var(--ink-soft); letter-spacing: .06em; text-transform: none; font-size: 12px; }
   .folio::after { content: ""; flex: 1; height: 1px; background: var(--line); }
-  .sheet { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; box-shadow: var(--shadow); }
-  .sheet img { width: 100%; height: auto; }
+  .sheet {
+    background: var(--paper); border: 1px solid var(--line);
+    border-radius: 10px; overflow: hidden; box-shadow: var(--shadow);
+    aspect-ratio: 1460 / 829;
+  }
+  .sheet img { width: 100%; height: 100%; object-fit: cover; }
 
   .close { background: var(--teal); color: #fff; padding-block: clamp(44px, 7vw, 72px); }
-  .close h2 { margin: 0; font-size: clamp(1.8rem, 5vw, 2.7rem); font-weight: 600; letter-spacing: -.03em; line-height: 1.06; text-wrap: balance; }
+  .close h2 {
+    margin: 0; font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 600;
+    letter-spacing: -.03em; line-height: 1.06; text-wrap: balance;
+  }
   .close h2 .serif { color: var(--cream); }
   .close p { margin: 16px 0 0; max-width: 52ch; color: rgba(255,255,255,.78); }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin-top: 30px; }
@@ -91,18 +157,27 @@
   .card .k { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.55); margin: 0 0 7px; }
   .card .v { font-size: 17px; font-weight: 600; letter-spacing: -.02em; word-break: break-word; }
   .card .v.num { font-variant-numeric: tabular-nums; }
-  .copy { margin-top: 10px; background: transparent; color: var(--cream); border: 1px solid rgba(253,248,198,.4); border-radius: 999px; padding: 5px 12px; font: inherit; font-size: 12px; cursor: pointer; font-family: var(--grotesk); }
+  .copy {
+    margin-top: 10px; background: transparent; color: var(--cream);
+    border: 1px solid rgba(253,248,198,.4); border-radius: 999px;
+    padding: 5px 12px; font-family: var(--grotesk); font-size: 12px; cursor: pointer;
+  }
   .copy:hover { background: rgba(253,248,198,.1); }
-  footer { padding-block: 26px 34px; color: var(--ink-faint); font-size: 12.5px; display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between; }
+
+  footer {
+    padding-block: 26px 34px; color: var(--ink-faint); font-size: 12.5px;
+    display: flex; flex-wrap: wrap; gap: 6px 16px; justify-content: space-between;
+  }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style>
 </head>
 <body>
 
+
 <div class="bar" id="bar">
   <div class="wrap">
     <span class="name">Lumid <span class="st">Studio</span></span>
-    <a class="btn btn-primary" href="https://wa.me/918590174679?text=Hi%2C%20I%20saw%20the%20Lumid%20Studio%20brochure">
+    <a class="btn btn-primary" href="https://wa.me/918590174679?text=Hi%20Riyan%2C%20I%20saw%20your%20design%20portfolio">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.08c-.24.68-1.4 1.3-1.95 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.68-.17 1.36Z"/></svg>
       WhatsApp
     </a>
@@ -111,62 +186,117 @@
 
 <header class="mast" id="mast">
   <div class="wrap">
-    <a class="lockup" href="/"><span class="dot"></span>Lumid <span class="st">Studio</span></a>
-    <p class="eyebrow">Web design &amp; development &middot; Kozhikode, Kerala</p>
-    <h1>Websites built to bring in <span class="serif">enquiries</span></h1>
-    <p class="lead">We design and build the whole site, from page structure and content to launch. Here is our brochure &mdash; nine spreads, about two minutes to read.</p>
+    <div class="lockup"><span class="dot"></span>Lumid <span class="st">Studio</span></div>
+    <p class="eyebrow">UX &amp; web design &middot; Kozhikode, Kerala</p>
+    <h1>Web <span class="serif">Design &amp; Development</span></h1>
+    <p class="lead">Sixteen slides on how we design and build websites, who we build them for, and what it costs. Around three minutes to read.</p>
     <ul class="toc">
-      <li>Who we are</li>
-      <li>What we do</li>
-      <li>Core values</li>
-      <li>How we engage</li>
-      <li>Selected work</li>
-      <li>Pricing</li>
+      <li>Why sites lose leads</li>
+      <li>What we design</li>
+      <li>Who this is for</li>
+      <li>How we work</li>
+      <li>Selected work &amp; case studies</li>
+      <li>Pricing &amp; audit</li>
     </ul>
     <div class="actions">
-      <a class="btn btn-primary" href="https://wa.me/918590174679?text=Hi%2C%20I%20saw%20the%20Lumid%20Studio%20brochure">
+      <a class="btn btn-primary" href="https://wa.me/918590174679?text=Hi%20Riyan%2C%20I%20saw%20your%20design%20portfolio">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.08c-.24.68-1.4 1.3-1.95 1.38-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.15-.19-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.76 1.25 1.63 2.03 1.12 1 2.06 1.31 2.35 1.46.29.15.46.12.63-.07.17-.19.73-.85.92-1.14.19-.29.39-.24.66-.15.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.12.07.68-.17 1.36Z"/></svg>
         Message on WhatsApp
       </a>
       <a class="btn btn-ghost" href="#talk">Get a free website audit</a>
     </div>
-    <p class="meta">9 spreads &middot; updated September 2026</p>
+    <p class="meta">16 slides &middot; updated September 2026</p>
   </div>
 </header>
 
 <main>
   <section class="deck">
     <div class="wrap">
-      <article class="spread"><p class="folio">01 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-01.jpg" width="1389" height="1582" alt="Lumid Studio company deck cover and contents" fetchpriority="high" decoding="async"></div></article>
-      <article class="spread"><p class="folio">02 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-02.jpg" width="1389" height="1582" alt="Who we are, and our core proposition" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">03 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-03.jpg" width="1393" height="1582" alt="Website design and development, and social media management" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">04 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-04.jpg" width="1393" height="1582" alt="Content creation, and website design and development" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">05 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-05.jpg" width="1393" height="1582" alt="Digital marketing, and our core values" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">06 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-06.jpg" width="1393" height="1582" alt="How we engage, with the four stages of an engagement" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">07 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-07.jpg" width="1393" height="1582" alt="Selected work, and the Wayanad Adventure Park case study" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">08 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-08.jpg" width="1393" height="1582" alt="IPS Industrial and Gritway Innovations case studies" loading="lazy" decoding="async"></div></article>
-      <article class="spread"><p class="folio">09 / 09</p><div class="sheet"><img src="/pitch-deck/img/page-09.jpg" width="1393" height="1582" alt="Pricing, and contact and next steps" loading="lazy" decoding="async"></div></article>
+      <article class="slide">
+        <p class="folio">01 / 16 <span class="nm">Cover</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-01.jpg" width="1460" height="829" alt="Cover" fetchpriority="high" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">02 / 16 <span class="nm">What&rsquo;s inside</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-02.jpg" width="1460" height="829" alt="What is inside" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">03 / 16 <span class="nm">Why sites lose leads</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-03.jpg" width="1460" height="829" alt="Why sites lose leads" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">04 / 16 <span class="nm">What we design</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-04.jpg" width="1460" height="829" alt="What we design" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">05 / 16 <span class="nm">Design &amp; development works</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-05.jpg" width="1460" height="829" alt="Design and development works" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">06 / 16 <span class="nm">Who this is for</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-06.jpg" width="1460" height="829" alt="Who this is for" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">07 / 16 <span class="nm">How we work</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-07.jpg" width="1460" height="829" alt="How we work" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">08 / 16 <span class="nm">What changes</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-08.jpg" width="1460" height="829" alt="What changes" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">09 / 16 <span class="nm">Selected works</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-09.jpg" width="1460" height="829" alt="Selected works" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">10 / 16 <span class="nm">Wayanad Adventure Park</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-10.jpg" width="1460" height="829" alt="Wayanad Adventure Park case study" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">11 / 16 <span class="nm">IPS Industrial</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-11.jpg" width="1460" height="829" alt="IPS Industrial case study" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">12 / 16 <span class="nm">Gritway Innovations</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-12.jpg" width="1460" height="829" alt="Gritway Innovations case study" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">13 / 16 <span class="nm">Packages</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-13.jpg" width="1460" height="829" alt="Packages and pricing" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">14 / 16 <span class="nm">Common questions</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-14.jpg" width="1460" height="829" alt="Common questions" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">15 / 16 <span class="nm">Free website audit</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-15.jpg" width="1460" height="829" alt="Free website audit" loading="lazy" decoding="async"></div>
+      </article>
+      <article class="slide">
+        <p class="folio">16 / 16 <span class="nm">Contact &amp; next steps</span></p>
+        <div class="sheet"><img src="/design-pitchdeck/img/slide-16.jpg" width="1460" height="829" alt="Contact and next steps" loading="lazy" decoding="async"></div>
+      </article>
     </div>
   </section>
 
   <section class="close" id="talk">
     <div class="wrap">
-      <h2>Send us your link, get a <span class="serif">free audit</span></h2>
-      <p>We will send back what is working on your current site, what is losing you enquiries, and the three changes we would make first. Whether you hire us for them or not.</p>
+      <h2>Send your link, get a <span class="serif">free audit</span></h2>
+      <p>You get back what is working on your current site, what is losing you enquiries, and the three changes we would make first. Whether you hire us for them or not.</p>
       <div class="cards">
         <div class="card">
           <p class="k">WhatsApp or call</p>
-          <div class="v num"><a href="tel:+918590174679" style="text-decoration:none">+91 85901 74679</a></div>
-          <button class="copy" type="button" data-copy="+918590174679" data-label="Copy number">Copy number</button>
+          <div class="v num">+91 85901 74679</div>
+          <button class="copy" type="button" data-copy="+918590174679">Copy number</button>
         </div>
         <div class="card">
           <p class="k">Email</p>
-          <div class="v"><a href="mailto:info@lumid.in" style="text-decoration:none">info@lumid.in</a></div>
-          <button class="copy" type="button" data-copy="info@lumid.in" data-label="Copy address">Copy address</button>
+          <div class="v">riyan@lumid.in</div>
+          <button class="copy" type="button" data-copy="riyan@lumid.in">Copy address</button>
         </div>
         <div class="card">
-          <p class="k">Studio</p>
-          <div class="v"><a href="/" style="text-decoration:none">lumid.in</a></div>
+          <p class="k">Portfolio</p>
+          <div class="v">riyan.lumid.in</div>
           <p class="k" style="margin:9px 0 0">Kozhikode, Kerala</p>
         </div>
       </div>
@@ -176,43 +306,42 @@
   <div class="wrap">
     <footer>
       <span>Lumid Studio &mdash; web design &amp; development</span>
-      <span>info@lumid.in &middot; +91 85901 74679</span>
+      <span>riyan@lumid.in &middot; +91 85901 74679</span>
     </footer>
   </div>
 </main>
 
 <script>
   (function () {
-    var bar = document.getElementById('bar');
-    var mast = document.getElementById('mast');
+    var bar = document.getElementById('bar'), mast = document.getElementById('mast');
     if (bar && mast && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (entries) {
-        bar.classList.toggle('on', !entries[0].isIntersecting);
+      new IntersectionObserver(function (e) {
+        bar.classList.toggle('on', !e[0].isIntersecting);
       }, { rootMargin: '-90px 0px 0px 0px' }).observe(mast);
-    }
-    function flash(btn, text, ms) {
-      btn.textContent = text;
-      setTimeout(function () { btn.textContent = btn.getAttribute('data-label'); }, ms);
-    }
-    function select(btn) {
-      try {
-        var r = document.createRange();
-        r.selectNodeContents(btn.parentNode.querySelector('.v'));
-        var s = window.getSelection();
-        s.removeAllRanges();
-        s.addRange(r);
-        flash(btn, 'Selected — copy it', 2200);
-      } catch (e) {}
     }
     document.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('.copy') : null;
       if (!btn) return;
-      try {
-        navigator.clipboard.writeText(btn.getAttribute('data-copy'))
-          .then(function () { flash(btn, 'Copied', 1600); }, function () { select(btn); });
-      } catch (err) { select(btn); }
+      var text = btn.getAttribute('data-copy') || '';
+      var label = btn.textContent;
+      var done = function () {
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = label; }, 1600);
+      };
+      var fallback = function () {
+        var node = btn.parentNode.querySelector('.v');
+        try {
+          var r = document.createRange(); r.selectNodeContents(node);
+          var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+          btn.textContent = 'Selected \u2014 copy it';
+          setTimeout(function () { btn.textContent = label; }, 2200);
+        } catch (e2) {}
+      };
+      try { navigator.clipboard.writeText(text).then(done, fallback); }
+      catch (err) { fallback(); }
     });
   })();
 </script>
+
 </body>
 </html>
